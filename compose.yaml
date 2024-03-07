@@ -1,0 +1,17 @@
+services:
+
+    web:
+
+        container_name: web
+
+        image: softwareshinobi/software-shinobi-calculators
+
+        build: 
+
+            context: .
+
+            dockerfile: Dockerfile
+
+        ports:
+
+            - 8888:80
